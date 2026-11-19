@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  padding-bottom: 80px;
+}
+
+.contenido {
+  padding: 20px;
+}
+
+.encabezado a {
+  display: inline-block;
+  background-color: #e2e8f0;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #0f172a;
+}
+
+.producto {
+  position: relative;
+  max-width: 300px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px;
+  background-color: #ffffff;
+}
+
+.producto img {
+    width: 200px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+  border-radius: 6px;
+}
+
+.insignia {
+  position: absolute;
+  top: -10px;
+  right: 12px;
+  background-color: #ef4444;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.encabezado {
+  position: sticky;
+  top: 0;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 16px 20px;
+  z-index: 10;
+}
+
+.boton-flotante {
+  position: fixed;
+  right: 20px;
+  bottom: 75px; /* Lo sube por encima de la barra de cookies */
+  background-color: #16a34a;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 40; /* Mayor que el z-index: 30 de .aviso */
+}
+
+.aviso {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  z-index: 30;
+}
+
+.aviso p {
+  margin: 0;
+}
+
+.btn-aceptar {
+  padding: 8px 14px;
+  cursor: pointer;
+}
